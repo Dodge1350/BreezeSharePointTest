@@ -15,5 +15,8 @@
     <ProjectItemFile Source="breeze.labs.dataservice.sharepoint.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.labs.dataservice.abstractrest.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="breeze.metadata-helper.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.dataTables.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.dataTables.min.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="jquery.js" Target="Scripts\" Type="ElementFile" />
   </Files>
 </ProjectItem>

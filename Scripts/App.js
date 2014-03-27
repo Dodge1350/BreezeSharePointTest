@@ -117,10 +117,26 @@ function getAllItems() {
       var results = response.results;
       // write results > div
       if (results && results.length) {
-        var message = '';
-        for (var index = 0; index < results.length; index++) {
-          message += results[index].FirstName + ' ' + results[index].Title + ' (' + results[index].Email + ')<br/>';
+          var message = "<table cellpadding='0' cellspacing='0' border='0' class='display' id='example' width='100%'><thead><tr>";
+          message += "<thead><tr><th>First Name</th><th>Last Name</th><th>Email</th></tr></thead>";
+          message += "<tbody>";
+          for (var index = 0; index < results.length; index++) {
+              if(index == 1 || index == 3 || index == 5 || index == 7 || index == 9)
+              {
+                  message += "<tr class=" + "odd gradeA" +">";
+                  message += "<td>" + results[index].FirstName + "</td><td>" + results[index].Title + "</td><td>" + results[index].Email + "</td>";
+                  message += "</tr>";
+              }
+              else
+              {
+                  message += "<tr class=" + "even gradeA" +">";
+                  message += "<td>" + results[index].FirstName + "</td><td>" + results[index].Title + "</td><td>" + results[index].Email + "</td>";
+                  message += "</tr>";
+              }
         }
+
+          message += "</tfoot></table>";
+
         jQuery("#results").html(message);
       }
     });
@@ -157,10 +173,13 @@ function updateFirstItem() {
 // create a new contact
 function createItem() {
   // create entity
-  var contact = entityManager.createEntity(contactType);
-  contact.FirstName = 'Lewis';
-  contact.Title = 'Hamilton';
-  contact.Email = 'lewis.hamilton@mercedes.com';
+    var contact = entityManager.createEntity(contactType);
+    contact.FirstName = document.getElementById("FirstName").value;
+    contact.Title = document.getElementById("LastName").value;
+    contact.Email = document.getElementById("Email").value;
+  //contact.FirstName = 'Lewis';
+  //contact.Title = 'Hamilton';
+  //contact.Email = 'lewis.hamilton@mercedes.com';
   // save entity
   entityManager.saveChanges()
     .then(function () {

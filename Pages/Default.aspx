@@ -8,40 +8,74 @@
 
 <%-- The markup and script in the following Content element will be placed in the <head> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
-  <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
-  <script type="text/javascript" src="/_layouts/15/sp.js"></script>
-  <meta name="WebPartPageExpansion" content="full" />
+    <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
+    <script type="text/javascript" src="/_layouts/15/sp.js"></script>
+    <meta name="WebPartPageExpansion" content="full" />
 
-  <!-- breeze & dependent libraries -->
-  <script type="text/javascript" src="../Scripts/q.js"></script>
-  <script type="text/javascript" src="../Scripts/breeze.debug.js"></script>
-  <script type="text/javascript" src="../Scripts/breeze.labs.dataservice.abstractrest.js"></script>
-  <script type="text/javascript" src="../Scripts/breeze.labs.dataservice.sharepoint.js"></script>
-  <script type="text/javascript" src="../Scripts/breeze.metadata-helper.js"></script>
+    <!-- breeze & dependent libraries -->
+    <script type="text/javascript" src="../Scripts/q.js"></script>
+    <script type="text/javascript" src="../Scripts/breeze.debug.js"></script>
+    <script type="text/javascript" src="../Scripts/breeze.labs.dataservice.abstractrest.js"></script>
+    <script type="text/javascript" src="../Scripts/breeze.labs.dataservice.sharepoint.js"></script>
+    <script type="text/javascript" src="../Scripts/breeze.metadata-helper.js"></script>
 
-  <!-- Add your CSS styles to the following file -->
-  <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+    <!-- datatable coniguration -->
+    <style type="text/css" title="currentStyle">
+        @import "../Content/demo_page.css";
+        @import "../Content/demo_table_jui.css";
+        @import "../Content/Redmond/jquery-ui-1.10.4.custom.css";
+    </style>
+    <script type="text/javascript" src="../Scripts/jquery.js"></script>
+    <script type="text/javascript" src="../Scripts/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            //$('#example').dataTable();
+            oTable = $('#example').dataTable({
+                "bJQueryUI": true,
+                "sPaginationType": "full_numbers"
+            });
 
-  <!-- Add your JavaScript to the following file -->
-  <script type="text/javascript" src="../Scripts/App.js"></script>
+        });
+		</script>
+
+    <!-- Add your CSS styles to the following file -->
+    <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+
+    <!-- Add your JavaScript to the following file -->
+    <script type="text/javascript" src="../Scripts/App.js"></script>
 </asp:Content>
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-  Breeze JS + SharePoint 2013 Sample
+    Breeze JS + SharePoint 2013 Sample
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 
-  <div>
-    <input type="button" onclick="getAllItems();" value="Get All Contacts" disabled="disabled" />&nbsp;
-    <input type="button" onclick="getOneItem();" value="Get One Contact" disabled="disabled"/>&nbsp;
-    <input type="button" onclick="updateFirstItem();" value="Update Contact" disabled="disabled"/>&nbsp;
-    <input type="button" onclick="createItem();" value="Create Contact" disabled="disabled"/>&nbsp;
-    <input type="button" onclick="deleteItem();" value="Delete Contact" disabled="disabled"/>
-  </div>
-  <div id="results"></div>
+    <div>
+        <input type="button" onclick="getAllItems();" value="Get All Contacts" disabled="disabled" />&nbsp;
+   
+        <input type="button" onclick="getOneItem();" value="Get One Contact" disabled="disabled" />&nbsp;
+   
+        <input type="button" onclick="updateFirstItem();" value="Update Contact" disabled="disabled" />&nbsp;
+   
+        <input type="button" onclick="createItem();" value="Create Contact" disabled="disabled" />&nbsp;
+   
+        <input type="button" onclick="deleteItem();" value="Delete Contact" disabled="disabled" />
+    </div>
+
+    <div>
+        <input id="FirstName" type="text" />
+        <input id="LastName" type="text" />
+        <input id="Email" type="text" />
+    </div>
+    <div id="demo">
+        <div id="results"></div>
+    </div>
+
+
+
 
 </asp:Content>

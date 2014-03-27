@@ -2,5 +2,28 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="Content">
     <File Path="Content\App.css" Url="Content/App.css" ReplaceContent="TRUE" />
+    <File Path="Content\demo_page.css" Url="Content/demo_page.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery.dataTables.css" Url="Content/jquery.dataTables.css" ReplaceContent="TRUE" />
+    <File Path="Content\demo_table.css" Url="Content/demo_table.css" ReplaceContent="TRUE" />
+    <File Path="Content\demo_table_jui.css" Url="Content/demo_table_jui.css" ReplaceContent="TRUE" />
+    <File Path="Content\jquery.dataTables_themeroller.css" Url="Content/jquery.dataTables_themeroller.css" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\jquery-ui-1.10.4.custom.css" Url="Content/Redmond/jquery-ui-1.10.4.custom.css" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\jquery-ui-1.10.4.custom.min.css" Url="Content/Redmond/jquery-ui-1.10.4.custom.min.css" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\animated-overlay.gif" Url="Content/Redmond/Images/animated-overlay.gif" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_flat_0_aaaaaa_40x100.png" Url="Content/Redmond/Images/ui-bg_flat_0_aaaaaa_40x100.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_flat_55_fbec88_40x100.png" Url="Content/Redmond/Images/ui-bg_flat_55_fbec88_40x100.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_glass_75_d0e5f5_1x400.png" Url="Content/Redmond/Images/ui-bg_glass_75_d0e5f5_1x400.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_glass_85_dfeffc_1x400.png" Url="Content/Redmond/Images/ui-bg_glass_85_dfeffc_1x400.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_glass_95_fef1ec_1x400.png" Url="Content/Redmond/Images/ui-bg_glass_95_fef1ec_1x400.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_gloss-wave_55_5c9ccc_500x100.png" Url="Content/Redmond/Images/ui-bg_gloss-wave_55_5c9ccc_500x100.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_inset-hard_100_f5f8f9_1x100.png" Url="Content/Redmond/Images/ui-bg_inset-hard_100_f5f8f9_1x100.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-bg_inset-hard_100_fcfdfd_1x100.png" Url="Content/Redmond/Images/ui-bg_inset-hard_100_fcfdfd_1x100.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_2e83ff_256x240.png" Url="Content/Redmond/Images/ui-icons_2e83ff_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_6da8d5_256x240.png" Url="Content/Redmond/Images/ui-icons_6da8d5_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_217bc0_256x240.png" Url="Content/Redmond/Images/ui-icons_217bc0_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_469bdd_256x240.png" Url="Content/Redmond/Images/ui-icons_469bdd_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_cd0a0a_256x240.png" Url="Content/Redmond/Images/ui-icons_cd0a0a_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_d8e7f3_256x240.png" Url="Content/Redmond/Images/ui-icons_d8e7f3_256x240.png" ReplaceContent="TRUE" />
+    <File Path="Content\Redmond\Images\ui-icons_f9bd01_256x240.png" Url="Content/Redmond/Images/ui-icons_f9bd01_256x240.png" ReplaceContent="TRUE" />
   </Module>
 </Elements>
